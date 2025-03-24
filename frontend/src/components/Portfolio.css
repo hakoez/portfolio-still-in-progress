@@ -1,0 +1,92 @@
+.portfolio {
+    text-align: center;
+    margin: 50px auto;
+  }
+  
+  .portfolio h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .project-boxes {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    flex-wrap: wrap; /* Responsive için satır kırma */
+  }
+  
+  .project-box {
+    width: 250px;
+    height: 250px;
+    background-color: #9ea89e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .project-box:hover {
+    transform: scale(1.1); /* Hover'da hafif büyüsün */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  .project-box.open .project-title {
+    margin-bottom: 0; 
+  }
+  .project-box.open .project-details {
+    margin-top: 0;
+  }
+  .project-box.open {
+    transform: scale(2.35);
+    box-shadow: 0 12px 44px rgba(0, 0, 0, 0.4);
+    z-index: 3; 
+    justify-content: flex-start; 
+    width: 250px;  
+    height: 350px; 
+  }
+  
+  .project-box img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  .project-title {
+    font-size: 26px !important;
+    color: white;
+  }
+  .project-box p {
+    margin-top: 0px;
+    font-size: 9px;
+    color: white;
+  }
+ 
+  .project-details {
+    margin-top: 1px;
+    color: white;
+  }
+  .close-btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 18px;
+    background-color: #ffffff00;
+    color: #ffffff;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 3;
+  }
+  
+  .close-btn:hover {
+    background-color: #f8f8f852;
+  }
+  

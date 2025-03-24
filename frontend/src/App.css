@@ -1,0 +1,15 @@
+/* Root Container - Sayfa genel yapısı */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+/* Light Mode (Varsayılan) */
+.light {
+  background-color: #242424; /* Açık tema arka plan */
+  color: white; /* Yazı rengi */
+  transition: background-color 0.3s, color 0.3s; /* Geçiş animasyonu */
+}

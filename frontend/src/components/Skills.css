@@ -1,0 +1,27 @@
+.skills {
+    text-align: center;
+    margin: 50px auto;
+
+  }
+  
+  .skills h2 {
+    font-size: 36px;
+    margin-bottom: 56px;
+    font-family: 'Roboto';
+    
+  }
+  
+  .skills-logos {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap:wrap;
+  }
+  
+  .skills-logos img {
+    width: 76px;
+    height: 86px;
+  }
+  .skills-logos img:hover {
+    filter: drop-shadow(0 0 10px #666869); 
+  }
